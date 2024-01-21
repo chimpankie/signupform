@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+div {
+    border: 2px solid black;  
+}
+
+#page {
+    width: 100vw;
+    display: flex;
+    min-height: 50vh;
+}
+
+#leftbar {
+    min-width: 30vw;
+}
+
+#rightbar {
+    min-width: 70vw;
+}
+
+#splash {
+    background-image: url('images/sign-up-splash.jpg');
+    height:100%;
+    position: relative;
+}
+
+#logo {
+    background: rgb(0 0 0 /30%);
+    position: absolute;
+    width: 100%;
+    top:30%;
+}
