@@ -5,10 +5,9 @@
 
 body {
     margin: 0;
+    box-sizing: border-box;
 }
-div {
-    border: 2px solid black;  
-}
+
 
 #page {
     width: 100vw;
@@ -18,11 +17,11 @@ div {
 }
 
 #leftbar {
-    min-width: 30vw;
+    min-width: 35vw;
 }
 
 #rightbar {
-    min-width: 70vw;
+    min-width: 65vw;
 }
 
 #splash {
@@ -33,20 +32,22 @@ div {
 }
 
 #logo {
-    background: rgb(0 0 0 /30%);
+    background: rgb(0 0 0 /40%);
     position: absolute;
     width: 100%;
-    top:30%;
+    top:25%;
     font-family: hipfirefont, Arial, Helvetica, sans-serif;
     color:white;
-    text-align: center;
     font-size: 2rem;
     display:flex;
-    justify-content: space-evenly;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
 }
 
+
 #roselogo {
     fill: white !important;
+
 }
