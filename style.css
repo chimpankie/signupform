@@ -118,11 +118,29 @@ input {
     border-radius: 5px;
 }
 
-input:focus {
-    border: 1px solid deepskyblue;
+input:focus:valid {
+    border: 1px solid lightgreen;
     position: relative;
     box-shadow: 4px 4px 11px -2px #BCBCBC;
 
+}
+
+input:placeholder-shown{
+    line-height: 2.5em;
+    width: 20em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+}
+
+input:focus:invalid {
+    border: 1px solid lightcoral;
+    position: relative;
+    box-shadow: 4px 4px 11px -2px #BCBCBC;
+}
+
+input:valid {
+    border: 1px solid lightgreen;
 }
 
 label {
@@ -143,4 +161,14 @@ button {
     position: relative;
     box-shadow: 3px 3px 8px 0px #D7D7DD;
 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: small;
+    color: dimgray;
 }

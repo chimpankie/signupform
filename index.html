@@ -24,16 +24,42 @@
         <!-- right hand page including intro text and form-->
         <div id="rightbar">
             <div id="rightHeader"><p>Unlike Steven Tyler, you never need to a miss thing... <i>The Hip Fire's</i> newsletter will make sure you're up to date on everything that matters.</p>
-                <p>So don't close your eyes, don't fall asleep: just sign up.</p></div>
+                <p>So don't close your eyes, don't fall asleep: register to stay up to date.</p></div>
             <div id="formContainer">                
                 <form>
                     <div id="form">
-                    <div class="formItem"><label for="firstName">FIRST NAME</label><input type="text" id="firstName"></div>
-                    <div class="formItem"><label for="lastName">LAST NAME</label><input type="text" id="lastName"></div>
-                    <div class="formItem"><label for="email">EMAIL</label><input type="email" id="email"></div>
-                    <div class="formItem"><label for="phoneNumber">PHONE NUMBER</label><input type="tel" id="phoneNumber"></div>
-                    <div class="formItem"><label for="password">PASSWORD</label><input type="password" id="password"></div>
-                    <div class="formItem"><label for="confirmPassword">CONFIRM PASSWORD</label><input type="password" id="confirmPassword"></div>
+                        <div class="formItem">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" required minlength="2" placeholder="Steven (required)">
+                        </div>
+                        <div class="formItem">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" placeholder="Tyler (required)" required minlength="2">
+                        </div>
+                        <div class="formItem">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" placeholder="yourname@email.com (required)" required>
+                        </div>
+                        <div class="formItem">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" id="phoneNumber" placeholder="01234 567890 (required)" required>
+                        </div>
+                        <div class="formItem">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                            <ul>
+                                <li>1 uppercase character</li>
+                                <li>1 lowercase character</li>
+                                <li>1 number</li>
+                            </ul>
+                        </div>
+                        <div class="formItem">
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPassword" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                        </div>
+                        <div class="formItem">
+                          
+                        </div>
                     </div>
                
                 
