@@ -119,7 +119,7 @@ input {
 }
 
 input:focus:valid {
-    border: 1px solid lightgreen;
+    outline: 1px solid lightgreen;
     position: relative;
     box-shadow: 4px 4px 11px -2px #BCBCBC;
 
@@ -134,13 +134,13 @@ input:placeholder-shown{
 }
 
 input:focus:invalid {
-    border: 1px solid lightcoral;
+    outline: 1px solid lightcoral;
     position: relative;
     box-shadow: 4px 4px 11px -2px #BCBCBC;
 }
 
 input:valid {
-    border: 1px solid lightgreen;
+    outline: 1px solid lightgreen;
 }
 
 label {

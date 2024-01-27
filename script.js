@@ -27,6 +27,12 @@ password.addEventListener('keyup', () => {
         } else {
             number.className = "";
         }
+        if(confirmPassword.value === password.value){
+            confirmPassword.setCustomValidity("");
+        } else {
+            confirmPassword.setCustomValidity("Invalid Field.");
+    
+        }
  
     })
 
