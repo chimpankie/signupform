@@ -172,3 +172,8 @@ li {
     font-size: small;
     color: dimgray;
 }
+
+.liValid {
+    color: green;
+    font-weight: bold;
+}
