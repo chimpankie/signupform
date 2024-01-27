@@ -1,6 +1,7 @@
 //Assign elements to variables
 
 let password = document.querySelector('#password');
+let confirm = document.querySelector('#confirmPassword')
 let lowercase = document.querySelector('#lowercase');
 let uppercase = document.querySelector('#uppercase');
 let number = document.querySelector('#number');
@@ -29,7 +30,16 @@ password.addEventListener('keyup', () => {
  
     })
 
+// Event listener for confirm field - checks if it is a match to password field
 
+confirmPassword.addEventListener('keyup', () => {
+    if(confirmPassword.value === password.value){
+        confirmPassword.setCustomValidity("");
+    } else {
+        confirmPassword.setCustomValidity("Invalid Field.");
+
+    }
+})
 //Function to check if password matches
 
 function checkPassword(input){
