@@ -12,20 +12,30 @@ let number = document.querySelector('#number');
 password.addEventListener('keyup', () => {
         if(/[A-Z]/.test(password.value)){
             uppercase.className = "liValid";
+            document.getElementById("uppercaseIcon").src = "images/icons/checkmark-svgrepo-com.svg";
 
         } else {
             uppercase.className = "";
+            document.getElementById("uppercaseIcon").src = "images/icons/cross-svgrepo-com.svg";
+
         }
         if(/[a-z]/.test(password.value)){
             lowercase.className = "liValid";
+            document.getElementById("lowercaseIcon").src = "images/icons/checkmark-svgrepo-com.svg";
+
 
         } else {
             lowercase.className = "";
+            document.getElementById("lowercaseIcon").src = "images/icons/cross-svgrepo-com.svg";
         }
         if(/\d/.test(password.value)){
             number.className = "liValid";
+            document.getElementById("numberIcon").src = "images/icons/checkmark-svgrepo-com.svg";
+
         } else {
             number.className = "";
+            document.getElementById("numberIcon").src = "images/icons/cross-svgrepo-com.svg";
+
         }
         if(confirmPassword.value === password.value){
             confirmPassword.setCustomValidity("");

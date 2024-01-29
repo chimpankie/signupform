@@ -177,3 +177,9 @@ li {
     color: green;
     font-weight: bold;
 }
+
+.pwdRequirement {
+    height: 0.8em;
+    padding: 6px;
+    vertical-align:middle; 
+}
